@@ -16,12 +16,12 @@ export default function Home() {
 
       <main className='p-4 dark:bg-neutral-900 min-h-screen flex items-center justify-center flex-wrap'>
         <div>
-          <h1 className='text-4xl text-neutral-800 dark:text-white font-semibold tracking-wide mb-4'>
-            <a href='https://nextjs.org' className='text-sky-600 hover:text-sky-700 transition-all'>
+          <h1 className='text-center text-4xl text-neutral-800 dark:text-white font-semibold tracking-wide mb-6'>
+            <a href='https://nextjs.org' className='text-sky-600 hover:text-sky-700 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded'>
               Next.js
             </a>{' '}
             +{' '}
-            <a href='https://tailwindcss.com' className='text-cyan-600 hover:text-cyan-700 transition-all'>
+            <a href='https://tailwindcss.com' className='text-cyan-600 hover:text-cyan-700 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded'>
               Tailwind CSS
             </a>
           </h1>

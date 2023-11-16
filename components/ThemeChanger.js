@@ -44,11 +44,11 @@ export default function ThemeChanger({ simple }) {
   return (
     <>
       {theme == 'dark' ? (
-        <button onClick={() => setTheme('light')} aria-label='Light'>
+        <button onClick={() => setTheme('light')} aria-label='Light' className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded p-0.5">
           <SunIcon className='h-6 w-6 text-neutral-400 hover:text-neutral-200 transition-all' />
         </button>
       ) : (
-        <button onClick={() => setTheme('dark')} aria-label='Dark'>
+        <button onClick={() => setTheme('dark')} aria-label='Dark' className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded p-0.5">
           <MoonIcon className='h-6 w-6 text-neutral-500 hover:text-neutral-700 transition-all' />
         </button>
       )}
@@ -64,7 +64,7 @@ export default function ThemeChanger({ simple }) {
         aria-label='Change Theme'
         className={`${
           theme === 'dark' ? 'bg-neutral-800' : 'bg-neutral-200'
-        } relative flex gap-1 items-center px-1 py-0.5 rounded-full h-7`}
+        } relative flex gap-1 items-center px-1 py-0.5 rounded-full h-7 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 p-0.5`}
       >
         <span className='absolute w-5 h-5 rounded-full bg-blue-500 dark:left-[1.7rem] left-[5px] transition-all'></span>
         <span aria-hidden={true}>
@@ -78,7 +78,7 @@ export default function ThemeChanger({ simple }) {
         <button
           onClick={handleDarkMode}
           aria-label='Change Theme'
-          className='w-8 h-8 p-1 transition-all ease-in duration-200 bg-neutral-800 hover:bg-neutral-700 text-white rounded-full'
+          className='w-8 h-8 p-1 transition-all ease-in duration-200 bg-neutral-800 hover:bg-neutral-700 text-white rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500'
         >
           <SunIcon className='h-6 w-6 text-neutral-300 hover:text-neutral-200 transition-all' />
         </button>
@@ -86,7 +86,7 @@ export default function ThemeChanger({ simple }) {
         <button
           onClick={handleDarkMode}
           aria-label='Change Theme'
-          className='w-8 h-8 p-1 transition-all ease-in duration-200 bg-neutral-100 hover:bg-neutral-200 rounded-full'
+          className='w-8 h-8 p-1 transition-all ease-in duration-200 bg-neutral-100 hover:bg-neutral-200 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500'
         >
           <MoonIcon className='h-6 w-6 text-neutral-600 hover:text-neutral-800 transition-all' />
         </button>
