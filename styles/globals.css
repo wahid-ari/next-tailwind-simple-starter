@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	overflow-x: hidden;
-	font-family: 'Plus Jakarta Sans', sans-serif;
+  overflow-x: hidden;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }

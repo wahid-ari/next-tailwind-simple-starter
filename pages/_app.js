@@ -1,20 +1,19 @@
-import { GlobalProvider } from "@utils/GlobalContext";
-import "@styles/globals.css";
-import { Inter } from '@next/font/google';
-import { ThemeProvider } from 'next-themes'
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+import { GlobalProvider } from '@/context/GlobalContext';
+
+import '@/styles/globals.css';
+
+const inter = Inter({ subsets: ['latin'] });
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class" storageKey='theme'>
-      {/* <GlobalProvider> */}
+    <GlobalProvider>
       <main className={inter.className}>
         <Component {...pageProps} />
       </main>
-      {/* </GlobalProvider> */}
-    </ThemeProvider>
-  )
+    </GlobalProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
