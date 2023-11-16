@@ -14,8 +14,8 @@ export default function Home() {
 
       <Navbar />
 
-      <main className='dark:bg-neutral-900 min-h-screen flex items-center justify-center flex-wrap'>
-        <div className='p-8'>
+      <main className='p-4 dark:bg-neutral-900 min-h-screen flex items-center justify-center flex-wrap'>
+        <div>
           <h1 className='text-4xl text-neutral-800 dark:text-white font-semibold tracking-wide mb-4'>
             <a href='https://nextjs.org' className='text-sky-600 hover:text-sky-700 transition-all'>
               Next.js
